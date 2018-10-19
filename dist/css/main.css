@@ -60,18 +60,18 @@ a {
   padding-left: 50px;
 }
 
-.menu-nav ul li a {
+.menu-nav ul li:hover {
+  background: white;
+}
+
+.menu-nav ul a li {
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
   color: black;
 }
 
-.menu-nav ul li:hover {
-  background: white;
-}
-
-.menu-nav ul li a:hover {
+.menu-nav ul a li:hover {
   color: salmon;
 }
 
@@ -192,6 +192,11 @@ a .btn.read-more {
   text-align: center;
   color: white;
   text-transform: capitalize;
+}
+
+/* Contact Page */
+.main .contact {
+  height: 800px;
 }
 
 /* Clearfix */
