@@ -1,0 +1,22 @@
+{
+  "name": "css-layouting",
+  "version": "1.0.0",
+  "description": "learn css layouting basic",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egin10/css-layouting.git"
+  },
+  "author": "egin10",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/egin10/css-layouting/issues"
+  },
+  "homepage": "https://github.com/egin10/css-layouting#readme",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}

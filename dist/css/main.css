@@ -1,7 +1,11 @@
 body {
   margin: 0;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: dimgrey;
+}
+
+a {
+  text-decoration: none;
 }
 
 .footer {
@@ -23,7 +27,7 @@ body {
 .container {
   margin: 40px auto;
   width: 980px;
-  background-color: #d9d9d9;
+  background-color: gainsboro;
 }
 
 /* <--- MENU ---> */
@@ -34,6 +38,7 @@ body {
   right: 0;
   height: 40px;
   background-color: black;
+  border-bottom: salmon solid 2px;
   z-index: 3;
 }
 
@@ -42,13 +47,17 @@ body {
   text-align: center;
   box-sizing: border-box;
   border-top: 1px solid salmon;
-  border-bottom: 1px solid salmon;
+  /* border-bottom: 1px solid salmon; */
+}
+
+.menu ul {
+  list-style: none;
 }
 
 .menu ul li {
   display: inline-block;
   padding-right: 50px;
-  margin-top: 8px;
+  padding-left: 50px;
 }
 
 .menu-nav ul li a {
@@ -58,9 +67,17 @@ body {
   color: black;
 }
 
+.menu-nav ul li:hover {
+  background: white;
+}
+
 .menu-nav ul li a:hover {
   color: salmon;
-  background: white;
+}
+
+.active,
+li:hover {
+  border-bottom: salmon solid 5px;
 }
 
 /* HOME */
@@ -70,7 +87,6 @@ body {
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: 0 -250px;
-  /* border-top: skyblue 5px solid; */
   border-bottom: salmon 2px solid;
   opacity: 0.5;
 }
@@ -83,6 +99,7 @@ body {
 .main {
   margin: 0;
   padding: 10px 30px;
+  background-color: antiquewhite;
 }
 
 .main p {
@@ -95,6 +112,7 @@ body {
   font-weight: bold;
   margin: 0;
   color: salmon;
+  border-bottom: #4d4d4d solid 3px;
 }
 
 /* Content */
@@ -134,7 +152,8 @@ body {
   width: 70px;
   height: 70px;
   float: left;
-  padding-right: 10px;
+  padding-right: 20px;
+  padding-bottom: 5px;
 }
 
 .sidebar p {
@@ -146,12 +165,33 @@ body {
 /* About Page */
 .box {
   padding: 10px;
-  border-right: skyblue solid 3px;
+  border-right: skyblue solid 5px;
+  border-bottom: salmon solid 1px;
 }
 
 .box:nth-child(2n-1) {
   text-align: right;
-  border-right: salmon solid 3px;
+  border-right: salmon solid 5px;
+}
+
+.box h3.title-about {
+  font-size: 18px;
+}
+
+/* News Page */
+.news-item {
+  text-align: justify;
+  border-bottom: #595959 solid 1px;
+}
+
+a .btn.read-more {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: salmon;
+  width: 80px;
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
 }
 
 /* Clearfix */
