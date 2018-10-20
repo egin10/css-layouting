@@ -73,10 +73,11 @@ a {
 
 .menu-nav ul a li:hover {
   color: salmon;
+  border-bottom: salmon solid 5px;
+  border-radius: 50px 50px 0 0;
 }
 
-.active,
-li:hover {
+.active {
   border-bottom: salmon solid 5px;
 }
 
@@ -154,6 +155,8 @@ li:hover {
   float: left;
   padding-right: 20px;
   padding-bottom: 5px;
+  border-radius: 30%;
+  overflow: hidden;
 }
 
 .sidebar p {
